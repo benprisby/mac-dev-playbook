@@ -1,11 +1,13 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: false
 configure_osx: false
 configure_sublime: false
 configure_sudoers: false
 configure_terminal: false
+
+configure_dotfiles: true
+chezmoi_init_url: "benprisby --apply --force"
 
 configure_dock: true
 dockitems_remove:  # Based on the default Dock ordering
