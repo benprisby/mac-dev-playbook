@@ -2,7 +2,6 @@
 downloads: ~/.ansible-downloads/
 
 configure_osx: false
-configure_sublime: false
 configure_sudoers: false
 configure_terminal: false
 
