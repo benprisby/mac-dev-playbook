@@ -1,11 +1,13 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_osx: false
 configure_terminal: false
 
 configure_dotfiles: true
 chezmoi_init_url: "benprisby --apply --force"
+
+configure_osx: true
+osx_script: "~/.macos --no-kill"
 
 configure_dock: true
 dockitems_remove:  # Based on the default Dock ordering
@@ -90,8 +92,6 @@ mas_installed_apps:
     name: "WireGuard"
 mas_email: ""
 mas_password: ""
-
-osx_script: "~/.osx --no-restart"
 
 npm_packages:
   - name: nodemon
