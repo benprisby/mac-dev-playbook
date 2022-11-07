@@ -1,4 +1,6 @@
-*.vagrant
+# macOS
 .DS_Store
+
+# Ansible
 *.retry
-roles*
+/roles/
