@@ -1,0 +1,110 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: false
+configure_osx: false
+configure_sublime: false
+configure_sudoers: false
+configure_terminal: false
+
+configure_dock: true
+dockitems_remove:  # Based on the default Dock ordering
+  - FaceTime
+  - Contacts
+  - TV
+  - Music
+  - Podcasts
+  - News
+  - Keynote
+  - Numbers
+  - Pages
+dockitems_persist:
+  - name: "Spotify"
+    path: "/Applications/Spotify.app/"
+    pos: 6
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 11
+  - name: "Fork"
+    path: "/Applications/Fork.app/"
+    pos: 12
+  - name: "Terminal"
+    path: "/Applications/Utilities/Terminal.app/"
+    pos: 13
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - cmake
+  - chezmoi
+  - doxygen
+  - go
+  - helm
+  - iperf
+  - jq
+  - mas
+  - mosquitto
+  - mypy
+  - node
+  - poetry
+  - pylint
+  - python3
+  - wget
+  - yapf
+  - zstd
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - audacity
+  - balenaetcher
+  - docker
+  - dolphin
+  - fork
+  - gimp
+  - google-chrome
+  - inkscape
+  - macdown
+  - mqtt-explorer
+  - openscad
+  - postman
+  - prusaslicer
+  - raspberry-pi-imager
+  - signal
+  - spotify
+  - sublime-text
+  - telegram
+  - visual-studio-code
+  - vnc-viewer
+  - zoom
+
+mas_installed_apps:
+  - id: 937984704
+    name: "Amphetamine"
+  - id: 441258766
+    name: "Magnet"
+  - id: 929507092
+    name: "PhotoScape X"
+  - id: 1153157709
+    name: "Speedtest"
+  - id: 1451685025
+    name: "WireGuard"
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+npm_packages:
+  - name: nodemon
+
+pip_packages:
+  - name: humanize
+  - name: paho-mqtt
+  - name: python-dateutil
+  - name: requests
+  - name: types-requests
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
