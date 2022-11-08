@@ -47,6 +47,7 @@ homebrew_installed_packages:
   - mosquitto
   - node
   - poetry
+  - pre-commit
   - python3
   - wget
   - zstd
