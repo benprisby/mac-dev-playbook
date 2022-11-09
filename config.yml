@@ -40,6 +40,7 @@ homebrew_installed_packages:
   - cmake
   - chezmoi
   - doxygen
+  - dpkg
   - go
   - helm
   - iperf
