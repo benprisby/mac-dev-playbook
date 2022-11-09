@@ -35,7 +35,8 @@ dockitems_persist:
     pos: 13
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
+  - ansible
+  - ansible-lint
   - cmake
   - chezmoi
   - doxygen
@@ -45,11 +46,15 @@ homebrew_installed_packages:
   - jq
   - mas
   - mosquitto
+  - mypy
   - node
   - poetry
   - pre-commit
+  - pylint
   - python3
   - wget
+  - yamllint
+  - yapf
   - zstd
 
 homebrew_taps:
@@ -98,16 +103,11 @@ npm_packages:
   - name: nodemon
 
 pip_packages:
-  - name: ansible-lint
   - name: humanize
-  - name: mypy
   - name: paho-mqtt
-  - name: pylint
   - name: python-dateutil
   - name: requests
   - name: types-requests
-  - name: yamllint
-  - name: yapf
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
