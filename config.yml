@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - ansible-lint
   - cmake
   - chezmoi
+  - coreutils
   - doxygen
   - dpkg
   - go
