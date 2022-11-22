@@ -74,7 +74,7 @@ homebrew_cask_apps:
   - gimp
   - google-chrome
   - inkscape
-  - logitech-options
+  - logi-options-plus
   - macdown
   - mqtt-explorer
   - openscad
